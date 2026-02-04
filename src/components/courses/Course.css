@@ -1,0 +1,784 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.kids-hero{
+    position: relative;
+    width: 100vw;
+    padding: 156px 0 75px 103px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.CoueseBlur{
+    width: 677px;
+    height: 677px;
+    border-radius: 50%;
+    background-color: #A3CFF5;
+}
+
+.CoueseBlur1{
+    position: absolute;
+    top: -266px;
+    left: 980px;
+    z-index: -1;
+    filter: blur(220px);
+}
+.CoueseBlur2{
+    width: 462px;
+    height: 462px;
+    position: absolute;
+    bottom: -40vh;
+    left: -235px;
+    z-index: -1;
+    filter: blur(80px);
+}
+
+.kids-hero .left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 39%;
+    gap: 16px;
+    align-items: flex-start;
+
+}
+.kids-hero .left h3{
+    text-align: left;
+    font-size: 64px;
+    font-weight: 700;
+}
+.kids-hero .left h3 span{
+    background: linear-gradient(104deg, #0A3D67 0%, #1A68A8 50%, #49BDEE 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.kids-hero .left p{
+    text-align: left;
+    font-size: 16px;
+    color: #4D4D4D;
+    margin-bottom: 16px;
+}
+.kids-hero .left button{
+  height: 56px;
+  padding: 16px 42px 16px 48px;
+  font-size: 18px;
+  gap: 10px;
+  border-radius: 15px;
+  background: linear-gradient(97deg, #0A3D67 29.33%, #1A68A8 71.63%, #49BDEE 100%);
+}
+
+.kids-hero .right{
+    padding: 0 93px;
+    position: relative;
+}
+
+.kids-hero .right span{
+    position: absolute;
+    padding: 20px 32px;
+    background: #D1E7FA;
+    border-radius: 50px 50px 0;
+    border: 1px solid #1A68A8;
+    box-shadow: 0 2px 8px 0px #85C4F8;
+}
+
+.kids-hero .right span.frist{
+    position: absolute;
+    top: -2%;
+    left: 0;
+}
+.kids-hero .right span.secound{
+    position: absolute;
+    bottom: 22%;
+    left: -8px;
+}
+.kids-hero .right span.third{
+    position: absolute;
+    bottom: 27%;
+    right: 25px;
+    border-radius: 50px 50px 50px 0;
+}
+
+.kids-hero .right img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* ======================================================================================================================= */
+
+.course-for{
+    width: 100vw;
+    padding: 80px 156px;
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+}
+
+.course-cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.course-cards .course-card{
+    width: 588px;
+    border-radius: 15px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+    align-items: flex-start;
+    border: 0.5px solid #0F518A;
+    box-shadow: 0 3px 23px -16px #000;
+    padding: 24px 32px;
+}
+.course-cards .course-card img{
+    width: 68px;
+    height: 68px;
+}
+.course-cards .course-card .text{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.course-cards .course-card .text h3{
+    font-size: 32px;
+}
+.course-cards .course-card .text p{
+    font-size: 14px;
+    color: #4D4D4D;
+}
+
+/* ================================================================================================================== */
+
+.methodology {
+  padding: 55px 156px;
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 56px;
+  background-color: #fff;
+}
+
+.section-title {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.section-title h2 {
+  color: #2B2B2B;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: -1.2px;
+}
+
+.section-title h2 span {
+  background: linear-gradient(104deg, #0A3D67 0%, #1A68A8 50%, #49BDEE 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section-title p {
+  color: #051B2E;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.about-methodology-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 21px;
+  flex-wrap: wrap;
+}
+
+.about-methodology-content .card {
+  display: flex;
+  flex-direction: row;
+  width: 588px;
+  height: 157px;
+  padding: 0 32px 0 20px;
+  align-items: center;
+  gap: 24px;
+  border-radius: 15px;
+  border-left: 1.4px solid #0F518A;
+  background: rgba(232, 243, 253, 0.70);
+}
+
+.about-methodology-content .card .image {
+  display: flex;
+  width: 69px;
+  height: 69px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background-color: #FFF;
+}
+
+.about-methodology-content .card .card-text {
+  gap: 12px;
+}
+
+.about-methodology-content .card .card-text h2 {
+  color: #1A1A1A;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.about-methodology-content .card .card-text {
+  color: var(--Neutral-700, #4D4D4D);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+
+/* ========================================================================= */
+
+.ProgramDuration{
+    width: 100vw;
+    padding: 80px 156px;
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+    background-color: #F5F7F9;
+}
+
+.ProgramDuration .ProgranData{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.ProgramDuration .top{
+    display: flex;
+    gap: 24px;
+}
+
+.ProgramDuration .top .top-card{
+    width: 280px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    border-radius: 20px;
+    border: 0.3px solid #0F518A;
+    background-color: #fff;
+}
+
+.ProgramDuration .bottom{
+    background: linear-gradient(97deg, #0A3D67 0%, #1A68A8 50%, #49BDEE 100%);
+    color: #fff;
+    border-radius: 20px;
+    width: 78vw;
+    padding: 48px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+}
+
+.ProgramDuration .bottom .bottom-head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+.ProgramDuration .bottom .bottom-head h3{
+    font-size: 40px;
+}
+.ProgramDuration .bottom .bottom-head p{
+    font-size: 14px;
+}
+
+.ProgramDuration .bottom .bottom-body{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.ProgramDuration .bottom .bottom-body div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #D1E7FA20;
+    padding: 16px 24px;
+    border-radius: 15px;
+    gap: 16px;
+}
+
+.ProgramDuration .bottom .bottom-body div p{
+    margin: 0;
+    font-size: 16px;
+}
+
+/* ======================================================================================================= */
+
+.journey{
+    width: 100vw;
+    padding: 80px 156px;
+    background-color: #F9F9F9;
+    display: flex;
+    flex-direction: column;
+    gap: 75px;
+}
+
+.journey>div{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.journey .right,
+.journey .left{
+    display: flex;
+    flex-direction: column;
+    gap: 103px;
+}
+.journey .mid{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 130px;
+    width: 125px;
+}
+
+.journey .mid p.verse{
+    position: relative;
+    align-self: flex-end;
+}
+.journey .mid p.verse::after,
+.journey .mid p.verse::before{
+    position: absolute;
+    content: '';
+    width: 2px;
+    height: 150px;
+    background: #0F518A;
+    transform: rotate(335deg);
+    bottom: 39px;
+    left: -14px;
+}
+
+.journey .mid p.verse::after{
+    transform: rotate(23deg);
+    top: 39px;
+    left: -14px;
+}
+
+.journey .mid p{
+    margin: 0;
+    width: 48px;
+    height: 48px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    border-radius: 50%;
+    background: linear-gradient(97deg, #0A3D67 29.33%, #1A68A8 71.63%, #49BDEE 100%);
+}
+
+
+.journey .right{
+    margin-top: 150px;
+}
+
+.journey .journey-card{
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    box-shadow: 0 3px 10px 0px #00000030;
+    border-radius: 15px;
+    padding: 24px;
+    gap: 15px;
+    width: 500px;
+}
+
+.journey .journey-card .card-head{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.journey .journey-card .card-head img{
+    width: 32px;
+    height: 32px;
+}
+
+.journey .journey-card .card-head span{
+    color: #0F518A;
+    font-size: 14px;
+}
+.journey .journey-card .card-head h3{
+    color: #0F518A;
+    font-size: 32px;
+}
+
+
+.journey .journey-card ul{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    list-style: outside;
+    align-items: flex-start;
+}
+
+.journey .journey-card ul li{
+    color: #4D4D4D;
+    font-size: 14px;
+}
+
+
+/* =============================================================================================== */
+
+.footer2{
+    width: 100vw;
+    background: linear-gradient(#fff , #D6ECFF);
+    padding: 80px 156px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 46px;
+}
+
+.footer2 .section-title {
+    gap: 16px;
+}
+.footer2 .section-title h2{
+    font-size: 40px;
+}
+
+.footer2 .section-title p{
+    font-size: 16px;
+}
+
+.footer2 .btns {
+    display: flex;
+    gap: 46px;
+}
+
+.footer2 .btns button{
+    width: auto;
+    padding: 16px 48px 16px 42px;
+    display: flex;
+    gap: 10px;
+}
+
+.footer2 .btns button:first-child{
+    color: #fff;
+    background: linear-gradient(104deg, #0A3D67 0%, #1A68A8 50%, #49BDEE 100%);
+}
+
+.footer2 .btns button:last-child{
+    color: #0F518A;
+    border: 2px solid #0F518A;
+}
+
+
+@media(max-width: 1440px){
+    .journey .journey-card{
+        width: 320px;
+    }
+}
+
+@media(max-width: 1090px){
+    .journey .journey-card{
+        width: 320px;
+    }
+    .journey {
+        padding: 80px 60px;
+    }
+}
+
+@media(max-width: 990px){
+    .kids-hero{
+        padding: 156px 0 75px 60px;
+    }
+    .kids-hero .left{
+        box-shadow: none;
+        width: 90vw;
+    }
+    .kids-hero .right{
+        top: 50px;
+    }
+    .ProgramDuration {
+        padding: 80px 80px;
+    }
+    .ProgramDuration .top {
+        flex-wrap: wrap;
+    }
+    .ProgramDuration .bottom{
+        width: 100%;
+        padding: 20px;
+    }
+    .ProgramDuration .bottom .bottom-body {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        justify-content: center;
+    }
+    .footer2 .btns button {
+        width: 280px;
+    }
+
+}
+
+@media(max-width: 900px){
+    .journey .mid{
+        width: auto;
+    }
+    .journey .mid p.verse::after, .journey .mid p.verse::before {
+        left: 20px;
+        transform: rotate(0deg);
+    }
+}
+@media(max-width: 850px){
+    .course-for {
+        padding: 80px 50px;
+    }
+    .course-cards .course-card{
+        width: 100%;
+    }
+    .section-title h2 {
+        font-size: 40px;
+    }
+    .footer2 .btns {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .journey{
+        padding: 80px 10px;
+        position: relative;
+    }
+}
+
+@media(max-width: 700px){
+    .journey .mid{
+        display: none;
+    }
+    .journey .right{
+        position: absolute;
+        top: 398px;
+    }
+    .journey>div {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .journey .right,
+    .journey .left {
+        display: flex;
+        flex-direction: column;
+        gap: 350px;
+    }
+    .methology-section{
+        padding: 80px 30px;
+    }
+}
+
+@media(max-width: 650px){
+    .kids-hero .right span {
+        padding: 10px 16px;
+    }
+    .kids-hero .right {
+        padding: 0px 20px
+    }
+    .methodology{
+        padding: 56px 30px;
+    }
+    .about-methodology-content .card {
+        width: 100%;
+    }
+    .footer2{
+        padding: 80px 30px
+    }
+    .comments-section {
+        padding: 80px 30px;
+    }
+    .comment-swipper .angles{
+        display: none;
+    }
+}
+
+
+/* ================================================================================================= */
+
+.methology-section{
+    width: 100vw;
+    padding: 80px 156px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 56px;
+    background-color: #F9F9F9;
+}
+
+.methology-section .methology-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.methology-section .methology-body .methilogy-card{
+    width: 384px;
+    padding: 20px 24px;
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 0 3px 10px 0px #00000010;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.methology-section .methology-body .methilogy-card img{
+    width: 100%;
+}
+.methology-section .methology-body .methilogy-card .text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.methology-section .methology-body .methilogy-card h3{
+    color: #051B2E;
+    font-size: 20px;
+}
+.methology-section .methology-body .methilogy-card p{
+    color: #4d4d4d;
+    font-size: 14px;
+}
+
+
+/* ================================================================================================================ */
+
+.learning-jurny{
+    width: 100vw;
+    padding: 119px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+    background-color: #F9F9F9;
+}
+
+.learning-jurny .learning-jurny-body{
+    display: flex;
+    gap: 49px;
+}
+
+.learning-jurny .learning-jurny-body .learning-jurny-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.learning-jurny .learning-jurny-body .learning-jurny-card .image{
+    position: relative;
+    background: linear-gradient(104deg, #0A3D67 0%, #1A68A8 50%, #49BDEE 100%);
+    color: #fff;
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+}
+.learning-jurny-card:not(:last-child) .image::after{
+    content: '';
+    position: absolute;
+    top: 37px;
+    left: 79px;
+    width: 18vw;
+    height: 2px;
+    background: linear-gradient(90deg ,#0A3D67 , #1A68A8 , #49BDEE);
+}
+
+.learning-jurny-card:not(:last-child) .secoundImage::after{
+    width: 25vw;
+}
+
+.learning-jurny .learning-jurny-body .learning-jurny-card .text{
+    background-color: #E8F3FD;
+    border-radius: 10px;
+    padding: 24px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.learning-jurny .learning-jurny-body .learning-jurny-card .text h3{
+    text-align: center;
+    color: #051B2E;
+    font-size: 24px;
+}
+.learning-jurny .learning-jurny-body .learning-jurny-card .text span{
+    color: #0A3D67;
+    font-size: 16px;
+}
+.learning-jurny .learning-jurny-body .learning-jurny-card .text p{
+    color: #4D4D4D;
+    font-size: 14px;
+}
+
+@media(max-width: 1300px){
+    .learning-jurny {
+        padding: 119px 10px;
+    }
+    .learning-jurny-body{
+        gap: 20px;
+    }
+}
+
+@media(max-width: 800px){
+    .learning-jurny-body{
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .learning-jurny .learning-jurny-body .learning-jurny-card {
+        display: flex;
+        flex-direction: row;
+        width: 455px;
+    }
+    
+    .learning-jurny-card:not(:last-child) .image::after{
+        bottom: -70px;
+        left: -33px;
+        transform: rotate(90deg);
+        width: 143px;
+        top: 148px;
+        left: -33px;
+    }
+    
+    
+}
+@media(max-width: 430px){
+    .learning-jurny .learning-jurny-body .learning-jurny-card {
+        width: 350px;
+    }
+
+}

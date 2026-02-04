@@ -1,0 +1,1051 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-size: clamp(14px, 1.2vw, 16px);
+}
+
+#root{
+  position: relative;
+}
+:root {
+  --Neutral-50: #fff;
+  --Neutral-50-text: #000;
+  --Primary-400: #479EEB;
+  --Primary-50: #E8F3FD;
+  --Primary-700: #0B3C66;
+}
+
+html,body{
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(122deg, #0A3D67 0%, #1A68A8 50%, #49BDEE 100%);
+  padding: 96px 260px;
+  color: var(--Neutral-50);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero .blur {
+  position: absolute;
+  width: 800px;
+  height: 800px;
+  border-radius: 9999px;
+  background: rgba(73, 189, 238, 0.13);
+  filter: blur(32px);
+  top: 13px;
+  right: 0;
+  transform: translateX(-50%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.hero-image {
+  position: absolute;
+  bottom: -2px;
+  left: 0px;
+  width: 100vw;
+  pointer-events: none;
+}
+
+.hero .hero-content {
+  display: flex;
+  width: 1128px;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+}
+
+.hero .hero-content .hero-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+  align-self: stretch;
+}
+
+.hero .hero-content .hero-title .hero-text {
+  gap: 32px;
+}
+
+.hero .hero-content .hero-title .hero-text h1 {
+  color: #FFF;
+  text-align: center;
+  font-size: 64px;
+  font-weight: 700;
+}
+
+.hero .hero-content .hero-title .hero-text h1 span {
+  color: #49BDEE;
+}
+
+.hero .hero-content .hero-title .hero-text p {
+  color: var(--Primary-50);
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.hero .hero-content .hero-title .hero-btn {
+  border-radius: 15px;
+  width: 360px;
+  color: var(--Primary-700);
+  background: var(--Neutral-50);
+}
+
+.hero .hero-content .hero-numbers {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 108px;
+  position: relative;
+}
+
+.hero .hero-content .hero-numbers .numbers-contaier {
+  gap: 16px;
+}
+
+.hero .hero-content .hero-numbers .numbers-contaier .number {
+  color: var(--Neutral-50);
+  text-align: center;
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.hero .hero-content .hero-numbers .numbers-contaier .text {
+  color: var(--Primary-50);
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.arrow-image {
+  transform: rotate(-3deg);
+  position: absolute;
+  bottom: -75px;
+  left: -8px;
+}
+
+
+/* =================================== Why Us Section ================================================== */
+
+.why,
+.our-courses {
+  padding: 55px 156px;
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 56px;
+}
+
+.section-title {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.section-title h2 {
+  color: #2B2B2B;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: -1.2px;
+}
+
+.questions-section .get-intouch .title p,
+.section-title h2 span {
+  background: linear-gradient(104deg, #0A3D67 0%, #1A68A8 50%, #49BDEE 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section-title p {
+  color: #051B2E;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.why-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 21px;
+  flex-wrap: wrap;
+}
+
+.why-content .card {
+  display: flex;
+  flex-direction: row;
+  width: 49%;
+  height: 157px;
+  padding: 0 32px 0 20px;
+  align-items: center;
+  gap: 24px;
+  border-radius: 15px;
+  border-left: 1.4px solid #0F518A;
+  background: rgba(232, 243, 253, 0.70);
+}
+
+.why-content .card .image {
+  display: flex;
+  width: 69px;
+  height: 69px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background-color: #FFF;
+}
+
+.why-content .card .card-text {
+  gap: 12px;
+}
+
+.why-content .card .card-text h2 {
+  color: #1A1A1A;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.why-content .card .card-text {
+  color: var(--Neutral-700, #4D4D4D);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+
+
+/* =========================== our-courses ===================================================== */
+
+.our-courses {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 156px;
+  background: linear-gradient(177deg, #FFF 2.2%, #D6ECFF 81.06%);
+}
+
+.our-courses-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  align-self: stretch;
+}
+
+.our-courses-content .card {
+  display: flex;
+  width: 282px;
+  padding: 24px;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  border-radius: 15px;
+  background: #FFF;
+  box-shadow: 0 2px 8px 0 #B0D0EA;
+}
+
+.our-courses-content .card .card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.our-course-btn {
+  height: 56px;
+  padding: 16px 42px 16px 48px;
+  font-size: 18px;
+  gap: 10px;
+  border-radius: 15px;
+  background: linear-gradient(97deg, #0A3D67 29.33%, #1A68A8 71.63%, #49BDEE 100%);
+}
+
+.our-courses-content .card .card-content .image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  align-self: stretch;
+}
+
+.our-courses-content .card .card-content .image h3 {
+  color: #051B2E;
+  text-align: center;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.our-courses-content .card .card-content .image p {
+  display: flex;
+  height: 33px;
+  padding: 10px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  background: rgba(209, 231, 250, 0.70);
+}
+
+.our-courses-content .card .card-content .headline {
+  color: #666;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.our-courses-content .card .card-content .feature,
+.prices {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 9px;
+}
+
+
+.our-courses-content .card .card-content .feature p,
+.prices p {
+  display: flex;
+  color: #0A365C;
+  font-size: 16px;
+  font-weight: 500;
+  flex: 1 0 0;
+  gap: 10px;
+
+}
+
+
+
+/* ================================== How It Works =================================================== */
+
+
+.how {
+  padding: 80px 156px;
+  width: 100%;
+  gap: 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #F9F9F9;
+}
+
+.how-content {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  position: relative;
+}
+
+.how-content .how-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+  flex: 1 0 0;
+}
+
+.how-content::after {
+  content: '';
+  position: absolute;
+  bottom: 88px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 2px;
+  width: 600px;
+  background: linear-gradient(97deg, #0A3D67 0%, #1A68A8 50%, #49BDEE 100%);
+}
+
+.how-content .how-card .image {
+  display: flex;
+  width: 80px;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 9999px;
+  background: linear-gradient(97deg, #0A3D67 0%, #1A68A8 50%, #49BDEE 100%);
+  box-shadow: 0 8px 30px -8px rgba(10, 61, 103, 0.12);
+}
+
+.how-content .how-card .text h3 {
+  color: #333;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.how-content .how-card .text p {
+  color: #666;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+
+
+/* ==================================================== Payment =========================================================== */
+
+
+.payment {
+  display: flex;
+  width: 100%;
+  padding: 74px 156px;
+  gap: 56px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #F9F9F9;
+}
+
+.payment-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  align-self: stretch;
+}
+
+.payment-card {
+  display: flex;
+  width: 384px;
+  padding: 24px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 32px;
+  border-radius: 15px;
+  background: #FFF;
+}
+
+.payment-card .card-head h3 {
+  color: #051B2E;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.payment-card p {
+  color: #666;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 16px;
+  gap: 10px;
+}
+
+.payment-card .plans {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  width: 100%;
+}
+
+.payment-card .plans h3 {
+  color: #051B2E;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.payment-card .plans h3 span {
+  color: #666;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.payment-card .payment-btn {
+  height: 56px;
+  padding: 16px 42px 16px 48px;
+  gap: 10px;
+  border-radius: 15px;
+  border: 1px solid #0F518A;
+  color: #0F518A;
+  font-size: 18px;
+  width: 100%;
+  background-color: #fff;
+}
+
+.active-card {
+  background: linear-gradient(97deg, #0A3D67 0%, #1A68A8 50%, #49BDEE 100%);
+  box-shadow: 0 0 40px 0 rgba(73, 189, 238, 0.30);
+  color: #fff;
+}
+
+.active-card .card-head h3 {
+  color: #fff;
+}
+
+.active-card p {
+  color: rgba(255, 255, 255, 0.80);
+}
+
+.active-card .plans h3,
+.active-card .plans h3 span {
+  color: #fff;
+}
+
+
+
+/* ================================================ Comments Section ===================================================== */
+
+.comments-section {
+  padding: 80px 156px;
+  width: 100%;
+  height: 100vh;
+  gap: 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(#0A3D67, #1A68A8, #49BDEE);
+}
+
+.comment-title h2 {
+  color: #fff !important;
+}
+
+.comment-title h2 span {
+  color: #49BDEE !important;
+}
+
+.comment-title p {
+  color: #fff !important;
+}
+
+.comment-swipper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 24px;
+}
+
+.comment-swipper .angles {
+  position: absolute;
+  width: 85vw;
+  display: flex;
+  justify-content: space-between;
+  left: -57%;
+  transform: translateX(50%);
+}
+
+.comment-swipper .angles i {
+  width: 44px;
+  height: 44px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.comment-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 30%;
+  padding: 24px;
+  border-radius: 15px;
+  background: #FFF;
+  gap: 24px;
+}
+
+.comment-card img {
+  width: 32px;
+  height: 32px;
+}
+
+.comment-card p {
+  color: #666666;
+  font-size: 14px;
+  font-weight: 400;
+  overflow-y: scroll;
+}
+
+.comment-card p::-webkit-scrollbar {
+  display: none;
+}
+
+.comment-card .comment-user {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+}
+
+.comment-card .comment-user img {
+  width: 42px;
+  height: 42px;
+  border-radius: 9999px;
+}
+
+.comment-card .comment-user h3 {
+  color: #051B2E;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.comment-swipper .dots {
+  position: absolute;
+  bottom: -87px;
+  left: 35%;
+  transform: translateX(50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 164px;
+}
+
+.comment-swipper .dots div {
+  width: 12px;
+  height: 12px;
+  background-color: #D9D9D9;
+  border-radius: 50%;
+}
+
+.comment-swipper .dots div.active {
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+}
+
+
+
+
+/* =================================== questions =========================================== */
+
+
+.questions-section {
+  width: 100vw;
+  min-height: 100vh;
+  font-family: Cairo;
+  background-color: #EDF0F3;
+  display: flex;
+  justify-content: center;
+  gap: 26px;
+  padding: 107px 156px;
+}
+
+.questions-section .get-intouch .title h2,
+.questions-section .questions .title h2 {
+  color: #051B2E;
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+
+.question {
+  padding: 24px;
+  height: 75px;
+  background: #fff;
+  color: #000;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: height 0.3s ease;
+}
+
+.question.active {
+  height: 150px;
+}
+
+.get-intouch{
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+}
+.get-intouch,
+.questions {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  text-align: left;
+}
+
+.question h4 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 2;
+  color: #333333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Cairo", sans-serif;
+}
+
+.question h4 i {
+  color: #000;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: 900;
+}
+
+.question .answer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 37px;
+  margin-top: 20px;
+}
+
+.contact{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact .whatsapp p{
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+.contact .whatsapp{
+  background-color: #fff;
+  padding: 24px;
+  display: flex;
+  gap: 22px;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.contact .whatsapp i{
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: linear-gradient(131deg, #0A3D67, #1A68A8, #49BDEE);
+  color: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 21px;
+}
+
+.contact .whatsapp div{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.get-intouch button{
+  height: 56px;
+  padding: 16px 42px 16px 48px;
+  font-size: 18px;
+  gap: 10px;
+  border-radius: 15px;
+  background: linear-gradient(97deg, #0A3D67 29.33%, #1A68A8 71.63%, #49BDEE 100%);
+  color: #FFF;
+  border: none;
+  margin-top: 32px;
+}
+
+/* =================================== Footer =========================================== */
+
+
+footer {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 64px 156px 0 156px;
+  background-color: #0B3C66;
+  color: #fff;
+  gap: 64px;
+}
+
+footer .top {
+  display: grid;
+  flex-direction: row;
+  grid-template-columns: 1.2fr 1fr 1fr 1fr;
+}
+
+footer .top>div {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+footer .top>div>div {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+footer p {
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 24px;
+  display: flex;
+  gap: 12px;
+  margin: 0;
+  color: #ffffffc7;
+}
+
+footer p i {
+  color: #49BDEE;
+}
+
+footer .top p {
+  width: 82%;
+}
+
+footer .top h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+footer .top h3 img {
+  width: 40px;
+  height: 40px;
+}
+
+footer .top .social {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+footer .top .social>div {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff29;
+}
+
+footer .top .social>div img {
+  width: 20px;
+}
+
+footer .bottom {
+  border-top: 1px solid #ffffff29;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 128px;
+  padding: 24px 0;
+  width: 100%;
+}
+
+
+@media(max-width: 1240px){
+  .hero{
+    padding: 0px 100px;
+  }
+  .hero .hero-content{
+    gap: 30px;
+  }
+}
+
+@media(max-width: 1000px){
+  .hero{
+    padding: 0px 0px;
+  }
+  header{
+    padding: 0 30px;
+    height: 95px;
+  }
+  .hero .hero-content{
+    width: 715px;
+  }
+  .hero .hero-content .hero-title .hero-text h1 {
+    font-size: 50px;
+  }
+  .hero .hero-content .hero-title .hero-text p {
+    font-size: 15px;
+  }
+  
+  .hero .hero-content .hero-numbers {
+    gap: 60px;
+  }
+  .hero .hero-content .hero-title .hero-btn {
+    width: 290px;
+  }
+  
+  .why-content .card {
+    width: 100%;
+  }
+  .our-courses-content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .how{
+    padding: 80px 25px;
+  }
+
+  .how-content::after {
+    bottom: 110px;
+  }
+  .payment {
+    padding: 74px 50px;
+  }
+  .comments-section {
+    padding: 80px 85px;
+    gap: 0;
+  }
+  .comments-section .angles{
+    width: 94vw;
+    left: -61%;
+  }
+  .comment-card{
+    gap: 10px;
+    padding: 20px;
+  }
+  .comment-card p{
+    font-size: 11px;
+  }
+  .comment-card .comment-user h3 {
+    font-size: 13px;
+  }
+  .comment-card .comment-user img {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .questions-section{
+    padding: 107px 60px;
+  }
+  
+  .questions-section .questions .title h2 ,
+  .questions-section .get-intouch .title h2{
+    font-size: 25px;
+    margin-bottom: 12px;
+  }
+  footer{
+    padding: 64px 70px 0 70px;
+  }
+  
+  .arrow-image {
+    left: -100px;
+  }
+  
+  
+}
+
+
+@media(max-width: 650px){
+  .arrow-image{
+    display: none;
+  }
+  .hero .hero-content .hero-numbers .numbers-contaier .text {
+    font-size: 15px;
+  }
+  .hero .hero-content .hero-numbers .numbers-contaier .number {
+    font-size: 30px;
+  }
+  .payment-content {
+    flex-wrap: wrap;
+  }
+}
+
+@media(max-width: 550px){
+  .why , .our-courses{
+    padding: 60px 30px;
+  }
+  .comments-section{
+    height: auto;
+  }
+  .comment-swipper{
+    flex-wrap: wrap;
+  }
+  .comment-card{
+    width: 100%;
+  }
+  .comment-swipper .dots{
+    display: none;
+  }
+  .questions-section{
+    flex-wrap: wrap;
+    padding: 65px 15px;
+  }
+  .get-intouch, .questions {
+    width: 100%;
+  }
+
+  footer{
+    flex-direction: column;
+  }
+  footer .top {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  footer .bottom{
+    gap: 15px;
+    flex-direction: column;
+  }
+  .how-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .how-content .how-card {
+    width: 70%;
+  }
+  .how-content::after {
+    display: none;
+  }
+  
+}
+
+@media(max-width: 380px){
+  .hero .hero-content .hero-title .hero-text h1 {
+    font-size: 35px;
+  }
+  .hero .hero-content .hero-title .hero-text p {
+    font-size: 12px;
+  }
+  .hero .hero-content .hero-numbers .numbers-contaier .number {
+    font-size: 24px;
+  }
+  .hero .hero-content .hero-numbers .numbers-contaier .text {
+    font-size: 11px;
+  }
+  .hero .hero-content .hero-numbers {
+    gap: 30px;
+  }
+  .hero .hero-content .hero-title .hero-btn {
+    width: 220px;
+  }
+  .section-title h2 {
+    font-size: 35px;
+  }
+  .section-title p{
+    font-size: 12px;
+  }
+  .why-content .card {
+    height: 130px;
+  }
+  .why-content .card .card-text h2{
+    font-size: 20px;
+  }
+  .why-content .card .card-text p{
+    font-size: 12px;
+  }
+}
