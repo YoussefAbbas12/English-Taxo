@@ -107,6 +107,9 @@ header .header-left ul li a{
     .open{
         transform: translateX(500px);
     }
+    header {
+        padding: 0 15px;
+    }
 }
 
 .dropdown-menu.show{

@@ -6,8 +6,8 @@
 }
 
 .dashboard{
-  width: 100vw;
-  padding: 188px 0 0 0;
+  width: 100%;
+  padding: 120px 0 0 0;
 }
 
 .dashboard .user{
@@ -16,7 +16,8 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 52px;
-  padding: 0 156px;
+  padding: 0 5%;
+  flex-wrap: wrap;
 }
 
 .dashboard .user .data{
@@ -63,7 +64,9 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 90px;
-  padding: 0 156px;
+  padding: 0 5%;
+  flex-wrap: wrap;
+  gap: 32px;
 }
 
 .user-data>div{
@@ -108,7 +111,7 @@
   display: flex;
   flex-direction: column;
   gap: 48px;
-  padding: 0 156px;
+  padding: 0 5%;
 }
 
 .OverallCourseProgress h2{
@@ -209,7 +212,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 0 156px;
+  padding: 0 5%;
   gap: 48px;
 }
 
@@ -346,7 +349,7 @@
   flex-direction: column;
   gap: 32px;
   background-color: #F9F9F9;
-  padding: 0 156px 50px 156px;
+  padding: 0 5% 50px 5%;
 }
 
 .Attendance-Commitment h2{
@@ -357,6 +360,7 @@
 .Attendance-Commitment>div{
   display: flex;
   gap: 32px;
+  flex-wrap: wrap;
 }
 
 .Attendance-Commitment>div .AttendanceCard{
@@ -370,8 +374,27 @@
   border-radius: 20px;
   box-shadow: 0 3px 10px 0 #00000010;
   gap: 48px;
-  width: 588px;
+  width: 100%;
+  max-width: 588px;
   height: auto;
+}
+
+@media (max-width: 768px) {
+  .dashboard .user .data {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+  .user-data > div {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .overall-body .completed {
+    flex-direction: column;
+  }
+  .overall-body .completed .completed-card {
+    width: 100%;
+  }
 }
 
 .Attendance-Commitment .rate{
@@ -491,6 +514,8 @@
 .AttendanceCard .cards{
   display: flex;
   gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .AttendanceCard .cards .card{
