@@ -1,0 +1,525 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.dashboard{
+  width: 100vw;
+  padding: 188px 0 0 0;
+}
+
+.dashboard .user{
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 52px;
+  padding: 0 156px;
+}
+
+.dashboard .user .data{
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.dashboard .user .data img{
+  width: 118px;
+  height: 118px;
+}
+
+.dashboard .user .data .name h2{
+  font-size: 32px;
+  color: #051B2E;
+  margin: 0;
+  font-weight: 600;
+}
+.dashboard .user .data .name p{
+  font-size: 16px;
+  color: #666666;
+  margin: 0;
+}
+
+.dashboard .user .active-memner{
+  padding: 6px 16px;
+  background-color: #4BB04030;
+  font-size: 12px;
+  color: #048400;
+  border-radius: 15px;
+  width: 125px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+
+
+.user-data{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 90px;
+  padding: 0 156px;
+}
+
+.user-data>div{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.user-data>div i{
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  padding: 10px;
+  color: #0F518A;
+  background-color: #D1E7FA70;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.user-data>div .text{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.user-data>div .text p{
+  font-size: 20px;
+  color: #666666;
+  margin: 0;
+}
+
+.user-data>div .text p:last-child{
+  font-size: 24px;
+  color: #000;
+  font-weight: 600;
+}
+
+
+.OverallCourseProgress{
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  padding: 0 156px;
+}
+
+.OverallCourseProgress h2{
+  font-size: 40px;
+  color: #051B2E;
+  font-weight: 700;
+}
+
+.OverallCourseProgress .overall-body{
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.OverallCourseProgress .overall-body .course-progress{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.OverallCourseProgress .overall-body .course-progress>div{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.OverallCourseProgress .overall-body .course-progress>div p{
+  font-size: 20px;
+  color: #333333;
+  font-weight: 700;
+  margin: 0;
+}
+
+.OverallCourseProgress .overall-body .course-progress>div span{
+  font-size: 20px;
+  color: #0F518A;
+  font-weight: 700;
+}
+
+.progress{
+  width: 100%;
+  height: 16px;
+  border-radius: 100px;
+  background-color: #E8F3FD;
+  position: relative;
+}
+
+.progress::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 45%;
+  height: 100%;
+  border-radius: 100px;
+  background-color: #0F518A;
+}
+
+.finished::before{
+  width: 100%;
+}
+.not-started::before{
+  width: 0%;
+}
+.started::before{
+  width: 60%;
+  background-color: #048400;
+}
+
+.overall-body .completed{
+  display: flex;
+  gap: 20px;
+}
+
+.overall-body .completed .completed-card{
+  background-color: #E8F3FD;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  width: 384px;
+  font-size: 20px;
+  color: #051B2E;
+  font-weight: 700;
+  padding: 24px;
+}
+
+.overall-body .completed .completed-card img{
+  width: 56px;
+  height: 56px;
+}
+
+.LevelbyLevelProgress{
+  margin-top: 80px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 156px;
+  gap: 48px;
+}
+
+.LevelbyLevelProgress h2{
+  color: #051B2E;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.LevelbyLevelProgress .levels{
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.LevelbyLevelProgress .levels .level{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.LevelbyLevelProgress .levels .level .course-progress-not-started,
+.LevelbyLevelProgress .levels .level .course-progress-started,
+.LevelbyLevelProgress .levels .level .course-progress{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.LevelbyLevelProgress .levels .level .course-progress-not-started p,
+.LevelbyLevelProgress .levels .level .course-progress-started p,
+.LevelbyLevelProgress .levels .level .course-progress p{
+  font-size: 20px;
+  color: #051B2E;
+  margin: 0;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.LevelbyLevelProgress .levels .level .course-progress-not-started p{
+  color: #333333;
+}
+
+
+.LevelbyLevelProgress .levels .level .course-progress p i{
+  background-color: #D1E7FA70;
+  padding: 10px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0F518A;
+}
+
+
+
+
+.LevelbyLevelProgress .levels .level .course-progress-started p i{
+  background-color: #04840020;
+  padding: 10px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #048400;
+}
+
+.LevelbyLevelProgress .levels .level .course-progress p span{
+  font-size: 10px;
+  color: #048400;
+  font-weight: 600;
+  background-color: #04840020;
+  padding: 6px 12px;
+  border-radius: 10px;
+  width: 92px;
+  text-align: center;
+  margin-left: 12px;
+}
+
+.LevelbyLevelProgress .levels .level .course-progress-not-started p i{
+  background-color: #E6E6E6;
+  padding: 10px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333333;
+}
+.LevelbyLevelProgress .levels .level .course-progress-started p i{
+  background-color: #04840020;
+  padding: 10px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #048400;
+}
+
+.LevelbyLevelProgress .levels .level .course-progress p span{
+  font-size: 10px;
+  color: #048400;
+  font-weight: 600;
+  background-color: #04840020;
+  padding: 6px 12px;
+  border-radius: 10px;
+  width: 92px;
+  text-align: center;
+  margin-left: 12px;
+}
+
+.LevelbyLevelProgress .levels .level .course-progress-not-started span,
+.LevelbyLevelProgress .levels .level .course-progress-started span,
+.LevelbyLevelProgress .levels .level .course-progress span{
+  font-size: 20px;
+  color: #0F518A;
+  font-weight: 600;
+}
+
+
+.Attendance-Commitment{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  background-color: #F9F9F9;
+  padding: 0 156px 50px 156px;
+}
+
+.Attendance-Commitment h2{
+  color: #051B2E;
+  font-size: 40px;
+}
+
+.Attendance-Commitment>div{
+  display: flex;
+  gap: 32px;
+}
+
+.Attendance-Commitment>div .AttendanceCard{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  padding-top: 35px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 3px 10px 0 #00000010;
+  gap: 48px;
+  width: 588px;
+  height: auto;
+}
+
+.Attendance-Commitment .rate{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+.Attendance-Commitment .rate .rate-progress{
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 8px solid #E8F3FD;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0F518A;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+/* .Attendance-Commitment .rate .rate-progress::after{
+  content: '';
+} */
+
+.Attendance-Commitment .rate p{
+  font-size: 20px;
+  color: #333333;
+  font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.rate {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rate-ring {
+  transform: rotate(-90deg);
+}
+
+.rate-ring__bg {
+  fill: transparent;
+  stroke: #e6f0fa; /* لون الخلفية الفاتح */
+  stroke-width: 14;
+}
+
+.rate-ring__circle {
+  fill: transparent;
+  stroke: #0b5fa5; /* اللون الأزرق */
+  stroke-width: 14;
+  stroke-linecap: round;
+  stroke-dasharray: 440;   /* محيط الدايرة */
+  stroke-dashoffset: 85;   /* 10% فاضي = 90% مليان */
+  transition: stroke-dashoffset 0.6s ease;
+}
+
+.rate-text {
+  position: absolute;
+  font-size: 28px;
+  font-weight: bold;
+  color: #0b5fa5;
+}
+
+.card2 .rate {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card2 .rate-ring {
+  transform: rotate(-90deg);
+}
+
+.card2 .rate-ring__bg {
+  fill: transparent;
+  stroke: #e6f0fa; /* لون الخلفية الفاتح */
+  stroke-width: 14;
+}
+
+.card2 .rate-ring__circle {
+  fill: transparent;
+  stroke: #0b5fa5; /* اللون الأزرق */
+  stroke-width: 14;
+  stroke-linecap: round;
+  stroke-dasharray: 440;   /* محيط الدايرة */
+  stroke-dashoffset: 61;   /* 10% فاضي = 90% مليان */
+  transition: stroke-dashoffset 0.6s ease;
+}
+
+.card2 .rate-text {
+  position: absolute;
+  font-size: 28px;
+  font-weight: bold;
+  color: #0b5fa5;
+}
+
+.AttendanceCard .cards{
+  display: flex;
+  gap: 24px;
+}
+
+.AttendanceCard .cards .card{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px;
+  border-radius: 20px;
+  background-color: #E8F3FD;
+  border: none;
+  width: 164px;
+  align-items: center;
+  justify-content: center;
+}
+
+.AttendanceCard .cards .card p{
+  color: #333333;
+  font-size: 20px;
+  margin: 0;
+  font-weight: 600;
+}
+.AttendanceCard .cards .card p i{
+  color: #0F518A;
+}
+
+.AttendanceCard .cards .card p:last-child{
+  font-size: 16px;
+}
+
+.left .cards .card {
+  width: 35vw;
+}

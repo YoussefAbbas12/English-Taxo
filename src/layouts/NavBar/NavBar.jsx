@@ -30,13 +30,15 @@ const NavBar = ({isHome}) => {
                 <NavDropdown.Item><Link to="/KidsPhonics">Kids Phonics</Link></NavDropdown.Item>
                 <NavDropdown.Item><Link to="/KidsEnglishProgram">Kids English Program</Link></NavDropdown.Item>
                 <NavDropdown.Item><Link to="/GeneralEnglish">General English Program</Link></NavDropdown.Item>
+                <NavDropdown.Item><Link to="/SpeakingCourse">Speaking Course For Adults</Link></NavDropdown.Item>
               </NavDropdown>
             </Nav>
 
             </li>
+            <li><Link to="/Announcements" onClick={() => setIsOpen(false)}>Announcements</Link></li>
             <li><Link to="/about" onClick={() => setIsOpen(false)}>About</Link></li>
             <li><Link to="/contact" onClick={() => setIsOpen(false)}>Contact</Link></li>
-            <li><Link to="/dashboard" onClick={() => setIsOpen(false)}>Dashboard</Link></li>
+            <li><Link to="/Dashboard" onClick={() => setIsOpen(false)}>Dashboard</Link></li>
           </ul>
           <button className="btn nav-btn">Book Now</button>
         </div>
