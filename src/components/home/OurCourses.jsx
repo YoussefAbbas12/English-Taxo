@@ -22,7 +22,7 @@ const OurCourses = () => {
                     <p><i className="fa-solid fa-check"></i>  Fun interactive activities</p>
                 </div>
             </div>
-            <button className='btn our-course-btn'>Learn More <svg xmlns="http://www.w3.org/2000/svg" width="8" height="13" viewBox="0 0 8 13" fill="none"><path d="M0.5 12.5L6.5 6.5L0.5 0.5" stroke="white" stroke-linecap="round"/></svg></button>
+            <button className='btn our-course-btn'>Learn More <svg xmlns="http://www.w3.org/2000/svg" width="8" height="13" viewBox="0 0 8 13" fill="none"><path d="M0.5 12.5L6.5 6.5L0.5 0.5" stroke="white" strokeLinecap="round"/></svg></button>
         </div>
         <div className="card">
             <div className="card-content">
@@ -39,7 +39,7 @@ const OurCourses = () => {
                     <p><i className="fa-solid fa-check"></i> Speaking confidence </p>
                 </div>
             </div>
-            <button className='btn our-course-btn'>Learn More <svg xmlns="http://www.w3.org/2000/svg" width="8" height="13" viewBox="0 0 8 13" fill="none"><path d="M0.5 12.5L6.5 6.5L0.5 0.5" stroke="white" stroke-linecap="round"/></svg></button>
+            <button className='btn our-course-btn'>Learn More <svg xmlns="http://www.w3.org/2000/svg" width="8" height="13" viewBox="0 0 8 13" fill="none"><path d="M0.5 12.5L6.5 6.5L0.5 0.5" stroke="white" strokeLinecap="round"/></svg></button>
         </div>
         <div className="card">
             <div className="card-content">
@@ -56,7 +56,7 @@ const OurCourses = () => {
                     <p><i className="fa-solid fa-check"></i> Exam preparation </p>
                 </div>
             </div>
-            <button className='btn our-course-btn'>Learn More <svg xmlns="http://www.w3.org/2000/svg" width="8" height="13" viewBox="0 0 8 13" fill="none"><path d="M0.5 12.5L6.5 6.5L0.5 0.5" stroke="white" stroke-linecap="round"/></svg></button>
+            <button className='btn our-course-btn'>Learn More <svg xmlns="http://www.w3.org/2000/svg" width="8" height="13" viewBox="0 0 8 13" fill="none"><path d="M0.5 12.5L6.5 6.5L0.5 0.5" stroke="white" strokeLinecap="round"/></svg></button>
         </div>
         <div className="card">
             <div className="card-content">
@@ -73,7 +73,7 @@ const OurCourses = () => {
                     <p><i className="fa-solid fa-check"></i> Accent improvement </p>
                 </div>
             </div>
-            <button className='btn our-course-btn'>Learn More <svg xmlns="http://www.w3.org/2000/svg" width="8" height="13" viewBox="0 0 8 13" fill="none"><path d="M0.5 12.5L6.5 6.5L0.5 0.5" stroke="white" stroke-linecap="round"/></svg></button>
+            <button className='btn our-course-btn'>Learn More <svg xmlns="http://www.w3.org/2000/svg" width="8" height="13" viewBox="0 0 8 13" fill="none"><path d="M0.5 12.5L6.5 6.5L0.5 0.5" stroke="white" strokeLinecap="round"/></svg></button>
         </div>
       </div>      
     </section>

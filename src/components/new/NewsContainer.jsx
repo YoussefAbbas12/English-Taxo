@@ -57,13 +57,20 @@ const NewsContainer = () => {
                 <button>Events</button>
                 <button>Academic News</button>
             </div>
-            <i class="fa-solid fa-filter"></i>
+            <i className="fa-solid fa-filter"></i>
         </div>
         <div className="filter-body">
             {
-                cards.map((card)=>(
-                    <NewsCard image={card.image} title={card.title} date={card.date} name={card.name} content={card.content} />
-                ))
+            cards.map((card, index) => (
+                <NewsCard
+                key={index}
+                image={card.image}
+                title={card.title}
+                date={card.date}
+                name={card.name}
+                content={card.content}
+                />
+            ))
             }
         </div>
     </section>

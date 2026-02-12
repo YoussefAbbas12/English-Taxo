@@ -45,15 +45,15 @@ const ProgramDuration = () => {
                 </div>
                 <div className="bottom-body">
                     <div>
-                        <i class="fa-solid fa-users"></i>
+                        <i className="fa-solid fa-users"></i>
                         <p>Max 5 Students Per Group</p>
                     </div>
                     <div>
-                        <i class="fa-solid fa-desktop"></i>
+                        <i className="fa-solid fa-desktop"></i>
                         <p>Live Zoom Sessions</p>
                     </div>
                     <div>
-                        <i class="fa-solid fa-play"></i>
+                        <i className="fa-solid fa-play"></i>
                         <p>Recorded for 1 Week</p>
                     </div>
                 </div>

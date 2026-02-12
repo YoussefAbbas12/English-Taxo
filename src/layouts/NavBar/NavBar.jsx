@@ -22,16 +22,15 @@ const NavBar = ({isHome}) => {
             <li><Link to="/" onClick={() => setIsOpen(false)}>Home</Link></li>
             <li className='dropDown'>
               <Nav>
-              <NavDropdown
-                id="nav-dropdown-light-example"
-                title="Courses"
-                menuVariant="light"
-              >
-                <NavDropdown.Item><Link to="/KidsPhonics">Kids Phonics</Link></NavDropdown.Item>
-                <NavDropdown.Item><Link to="/KidsEnglishProgram">Kids English Program</Link></NavDropdown.Item>
-                <NavDropdown.Item><Link to="/GeneralEnglish">General English Program</Link></NavDropdown.Item>
-                <NavDropdown.Item><Link to="/SpeakingCourse">Speaking Course For Adults</Link></NavDropdown.Item>
-              </NavDropdown>
+                <NavDropdown
+                  id="nav-dropdown-light-example"
+                  title="Courses"
+                  menuVariant="light">
+                  <NavDropdown.Item><Link to="/KidsPhonics">Kids Phonics</Link></NavDropdown.Item>
+                  <NavDropdown.Item><Link to="/KidsEnglishProgram">Kids English Program</Link></NavDropdown.Item>
+                  <NavDropdown.Item><Link to="/GeneralEnglish">General English Program</Link></NavDropdown.Item>
+                  <NavDropdown.Item><Link to="/SpeakingCourse">Speaking Course For Adults</Link></NavDropdown.Item>
+                </NavDropdown>
             </Nav>
 
             </li>

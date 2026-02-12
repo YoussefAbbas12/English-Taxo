@@ -43,8 +43,8 @@ const Why = () => {
       </div>
       <div className="why-content">
         {
-          whyCards.map((card)=>(
-            <HomeCard title={card.cardtitle} desc={card.carddesc} image={card.cardimage} />
+          whyCards.map((card , index)=>(
+            <HomeCard key={index} title={card.cardtitle} desc={card.carddesc} image={card.cardimage} />
           ))
         }
       </div>

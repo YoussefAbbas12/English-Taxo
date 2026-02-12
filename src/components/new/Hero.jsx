@@ -12,7 +12,7 @@ const Hero = () => {
         <div className="NewsHeroBody">
             <img src="assets/NewsHero.svg"/>
             <div className="content">
-                <span><i class="fa-regular fa-calendar"></i> January 15, 2026</span>
+                <span><i className="fa-regular fa-calendar"></i> January 15, 2026</span>
                 <div className="text">
                     <h3>New Semester Enrollment Now Open!</h3>
                     <p>We're excited to announce that enrollment for the Spring 2026 semester is now open! Join our growing community of learners and take the next step in your English journey. Early bird discounts available until January 31st.</p>

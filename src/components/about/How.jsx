@@ -43,8 +43,8 @@ const How = () => {
       </div>
       <div className="about-how-content">
         {
-          whyCards.map((card)=>(
-            <HomeCard title={card.cardtitle} desc={card.carddesc} image={card.cardimage} />
+          whyCards.map((card , index)=>(
+            <HomeCard key={index} title={card.cardtitle} desc={card.carddesc} image={card.cardimage} />
           ))
         }
       </div>

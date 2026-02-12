@@ -26,7 +26,7 @@ const Payment = () => {
                         <p><i className="fa-solid fa-check"></i> Lesson recordings (1 week)</p>
                         <p><i className="fa-solid fa-check"></i> Free assessment included</p>
                     </div>
-                    <button className='btn payment-btn'>Get Started <svg xmlns="http://www.w3.org/2000/svg" width="8" height="13" viewBox="0 0 8 13" fill="none"><path d="M0.5 12.5L6.5 6.5L0.5 0.5" stroke="white" stroke-linecap="round"/></svg></button>
+                    <button className='btn payment-btn'>Get Started <svg xmlns="http://www.w3.org/2000/svg" width="8" height="13" viewBox="0 0 8 13" fill="none"><path d="M0.5 12.5L6.5 6.5L0.5 0.5" stroke="white" strokeLinecap="round"/></svg></button>
                 </div>
             </div>
             <div className="payment-card active-card">
@@ -47,7 +47,7 @@ const Payment = () => {
                         <p><i className="fa-solid fa-check"></i> Lesson recordings (1 week)</p>
                         <p><i className="fa-solid fa-check"></i> Free assessment included</p>
                     </div>
-                    <button className='btn payment-btn'>Get Started <svg xmlns="http://www.w3.org/2000/svg" width="8" height="13" viewBox="0 0 8 13" fill="none"><path d="M0.5 12.5L6.5 6.5L0.5 0.5" stroke="white" stroke-linecap="round"/></svg></button>
+                    <button className='btn payment-btn'>Get Started <svg xmlns="http://www.w3.org/2000/svg" width="8" height="13" viewBox="0 0 8 13" fill="none"><path d="M0.5 12.5L6.5 6.5L0.5 0.5" stroke="white" strokeLinecap="round"/></svg></button>
                 </div>
             </div>
             <div className="payment-card">
@@ -68,7 +68,7 @@ const Payment = () => {
                         <p><i className="fa-solid fa-check"></i> Lesson recordings (1 week)</p>
                         <p><i className="fa-solid fa-check"></i> Free assessment included</p>
                     </div>
-                    <button className='btn payment-btn'>Get Started <svg xmlns="http://www.w3.org/2000/svg" width="8" height="13" viewBox="0 0 8 13" fill="none"><path d="M0.5 12.5L6.5 6.5L0.5 0.5" stroke="white" stroke-linecap="round"/></svg></button>
+                    <button className='btn payment-btn'>Get Started <svg xmlns="http://www.w3.org/2000/svg" width="8" height="13" viewBox="0 0 8 13" fill="none"><path d="M0.5 12.5L6.5 6.5L0.5 0.5" stroke="white" strokeLinecap="round"/></svg></button>
                 </div>
             </div>
         </div>
