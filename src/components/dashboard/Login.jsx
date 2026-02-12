@@ -20,7 +20,7 @@ const Login = () => {
                         <label htmlFor="">Enter Your ID</label>
                         <input type="text" placeholder='EX: STU2024156'/>
                     </div>
-                    <Link to='Dashboard'>View Progress</Link>
+                    <Link to='/Dashboard'>View Progress</Link>
                 </form>
             </div>
             <img src="assets/amico.svg"/>
