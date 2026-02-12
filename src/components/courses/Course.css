@@ -948,3 +948,81 @@
     font-size: 16px;
     margin: 0;
 }
+
+@media(max-width: 400px){
+    .kids-hero .right {
+        padding: 0;
+        left: -22px;
+    }
+    .kids-hero .right span.frist {
+        position: absolute;
+        top: -5%;
+        font-size: 11px;
+        left: -35px;
+    }
+    .kids-hero .right span.secound {
+        position: absolute;
+        bottom: 0%;
+        font-size: 11px;
+        left: -35px;
+    }
+    .kids-hero .right span.third {
+        position: absolute;
+        right: -22px;
+        font-size: 11px;
+    }
+    .about-methodology-content .card {
+        height: auto;
+        padding: 7px 32px 7px 20px;
+    }
+    .ProgramDuration {
+        padding: 80px 25px;
+
+    }
+    .ProgramDuration .top {
+        justify-content: center;
+    }
+    .learning-jurny-card:not(:last-child) .image::after {
+        width: 148px;
+        top: 154px;
+        left: -46px;
+    }
+    .Complete-English-Journey {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 80px 30px;
+    }
+    .Complete-English-Journey .journey-right .number .text h3 {
+        font-size: 20px;
+    }
+    .Complete-English-Journey .journey-right .number .text p {
+        font-size: 12px;
+    }
+    .Complete-English-Journey .journey-right .number .circule {
+        min-width: 50px;
+        height: 50px;
+        border: 5px solid #0F518A;
+        font-size: 25px;
+    }
+    .Complete-English-Journey .journey-right .number .circule .arrow {
+        height: 66px;
+        top: 50px;
+        left: 22px;
+    }
+    .Complete-English-Journey .journey-right .number {
+        gap: 15px;
+    }
+    .Learning-Journey {
+        flex-direction: column;
+        padding: 80px 25px;
+    }
+    .learning-body {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .recomendation h2 {
+        font-size: 30px;
+    }
+    .recomendation {
+        padding: 48px 10px;
+    }
+}

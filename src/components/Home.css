@@ -366,7 +366,7 @@ html,body{
 .how-content::after {
   content: '';
   position: absolute;
-  bottom: 88px;
+  bottom: 110px;
   left: 50%;
   transform: translateX(-50%);
   height: 2px;
@@ -1048,4 +1048,8 @@ footer .bottom {
   .why-content .card .card-text p{
     font-size: 12px;
   }
+  .how {
+    padding: 55px 25px;
+  }
+  
 }

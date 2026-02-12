@@ -20,7 +20,7 @@ const NavBar = ({isHome}) => {
         <div className={`header-left ${isOpen ? "open" : ""}`}>
           <ul>
             <li><Link to="/" onClick={() => setIsOpen(false)}>Home</Link></li>
-            <li>
+            <li className='dropDown'>
               <Nav>
               <NavDropdown
                 id="nav-dropdown-light-example"
@@ -37,10 +37,9 @@ const NavBar = ({isHome}) => {
             </li>
             <li><Link to="/Announcements" onClick={() => setIsOpen(false)}>Announcements</Link></li>
             <li><Link to="/about" onClick={() => setIsOpen(false)}>About</Link></li>
-            <li><Link to="/contact" onClick={() => setIsOpen(false)}>Contact</Link></li>
             <li><Link to="/Dashboard" onClick={() => setIsOpen(false)}>Dashboard</Link></li>
           </ul>
-          <button className="btn nav-btn">Book Now</button>
+          <a href="#footer" onClick={() => setIsOpen(false)} className="btn nav-btn">Book Now</a>
         </div>
     </header>
   )

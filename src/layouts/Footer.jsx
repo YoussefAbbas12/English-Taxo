@@ -1,8 +1,9 @@
+import { Link } from 'react-router-dom'
 import '../components/Home.css'
 
 const Footer = () => {
   return (
-    <footer>
+    <footer id='footer'>
         <div className="top">
             <div>
                 <h3><img src="Logo.svg" alt="Logo" loading='lazy'/> English Taxo</h3>
@@ -20,7 +21,7 @@ const Footer = () => {
             <div>
                 <h3>Quick Links</h3>
                 <div>
-                    <p>About Us</p>
+                    <Link to="/about">About Us</Link>
                     <p>Programs</p>
                     <p>Why Choose Us</p>
                     <p>Pricing</p>
