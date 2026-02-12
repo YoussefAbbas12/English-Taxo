@@ -8,6 +8,7 @@ import GeneralEnglish from "./pages/GeneralEnglish"
 import KidsEnglishProgram from "./pages/KidsEnglishProgram"
 import SpeakingCourse from "./pages/SpeakingCourse"
 import Dashboard from "./pages/Dashboard"
+import Login from "./components/dashboard/Login"
 
 
 const App = () => {
@@ -22,6 +23,7 @@ const App = () => {
         <Route path="/SpeakingCourse" element={<SpeakingCourse />} />
         <Route path="/Announcements" element={<News />} />
         <Route path="/Dashboard" element={<Dashboard />} />
+        <Route path="/login" element={<Login />} />
         <Route path="*" element={<Home />} />
       </Routes>
       <Footer />

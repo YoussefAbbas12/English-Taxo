@@ -5,6 +5,72 @@
   font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
 }
 
+.login{
+  padding: 200px 156px 100px;
+  width: 100%;
+}
+
+.login .content{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.login .content img{
+  width: 100%;
+}
+
+.login .content .form{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 52px;
+}
+
+.login .content .form .section-title h2{
+  text-align: start;
+  font-size: 64px;
+}
+
+.login .content .form .section-title p{
+  text-align: start;
+}
+
+.login .content .form form>div{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+  gap: 12px;
+}
+.login .content .form form label{
+  color: #051B2E;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.login .content .form form>div input{
+  padding: 20px;
+  color: #666666;
+  background-color: #F2F2F2;
+  border-radius: 15px;
+  width: 500px;
+  border: none;
+  outline: none;
+}
+
+.login .content .form form a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  width: 250px;
+  padding: 16px 42px;
+  font-size: 18px;
+  border-radius: 15px;
+  background: linear-gradient(97deg, #0A3D67 , #1A68A8, #49BDEE );
+  color: #fff;
+  font-weight: 600;
+  margin-top: 32px;
+}
+
 .dashboard{
   width: 100%;
   padding: 120px 0 0 0;
@@ -547,4 +613,27 @@
 
 .left .cards .card {
   width: 35vw;
+}
+
+@media(max-width: 1000px){
+  .login .content{
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+@media(max-width: 750px){
+  .login{
+    padding: 200px 40px 100px; 
+  }
+
+}
+
+@media(max-width: 560px){
+  .login .content .form form ,
+  .login .content .form form>div ,
+  .login .content .form form>div input{
+    width: 100%;
+  }
+
 }
