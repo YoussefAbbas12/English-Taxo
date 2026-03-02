@@ -975,6 +975,12 @@ footer .bottom {
   }
 }
 
+
+@media(max-width: 550px){
+  .comment-card{
+    width: 100% !important;
+  }
+}
 @media(max-width: 550px){
   .why , .our-courses{
     padding: 60px 30px;

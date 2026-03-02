@@ -246,7 +246,7 @@
   width: 0%;
 }
 .started::before{
-  width: 60%;
+  width: var(--progress);
   background-color: #048400;
 }
 

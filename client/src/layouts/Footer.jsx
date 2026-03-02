@@ -46,7 +46,7 @@ const Footer = () => {
             </div>
         </div>
         <div className="bottom">
-            <p>© 2025 English Taxo. All rights reserved.</p>
+            <p>© 2026 English Taxo. All rights reserved.</p>
             <p><span>Privacy Policy</span><span>Terms of Service</span></p>
         </div>
     </footer>

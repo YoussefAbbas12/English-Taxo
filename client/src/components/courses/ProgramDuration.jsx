@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ProgramDuration = ({students,live,recorded,date}) => {
+const ProgramDuration = ({frhstH3 , frhstP , secoundH3 , secoundP , thirdH3 , thirdP , fourthH3 , fourthP ,students,live,recorded,date}) => {
   return (
     <section className='ProgramDuration'>
         <div className="section-title">
@@ -12,29 +12,29 @@ const ProgramDuration = ({students,live,recorded,date}) => {
                 <div className="top-card">
                     <img src="assets/program1.png"/>
                     <div>
-                        <h3>9 Total Levels</h3>
-                        <p>Level Zero + Levels 1-8</p>
+                        <h3>{frhstH3}</h3>
+                        <p>{frhstP}</p>
                     </div>
                 </div>
                 <div className="top-card">
                     <img src="assets/program2.png"/>
                     <div>
-                        <h3>9 Months</h3>
-                        <p>Complete Program</p>
+                        <h3>{secoundH3}</h3>
+                        <p>{secoundP}</p>
                     </div>
                 </div>
                 <div className="top-card">
                     <img src="assets/program3.png"/>
                     <div>
-                        <h3>1 Hour</h3>
-                        <p>Per Session</p>
+                        <h3>{thirdH3}</h3>
+                        <p>{thirdP}</p>
                     </div>
                 </div>
                 <div className="top-card">
                     <img src="assets/program4.png"/>
                     <div>
-                        <h3>2-3 Session</h3>
-                        <p>Per Week</p>
+                        <h3>{fourthH3}</h3>
+                        <p>{fourthP}</p>
                     </div>
                 </div>
             </div>

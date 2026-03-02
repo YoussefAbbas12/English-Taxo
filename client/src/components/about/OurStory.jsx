@@ -11,7 +11,7 @@ const OurStory = () => {
             </div>
             <div className="our-story-image">
                 <div className="year">
-                    <h4>2020</h4>
+                    <h4>2019</h4>
                     <p>Year Founded</p>
                 </div>
                 <div className="contry">

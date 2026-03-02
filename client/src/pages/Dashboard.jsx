@@ -161,7 +161,7 @@ const Dashboard = () => {
                 <div className="progress started" style={{ '--progress': `${progress}%` }}></div>
               </div>
             );
-
+ 
             return (
               <div className="level" key={level.key}>
                 <div className="course-progress-not-started">

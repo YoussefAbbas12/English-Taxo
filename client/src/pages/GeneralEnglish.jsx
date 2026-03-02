@@ -15,7 +15,7 @@ const KidsEnglishProgram = () => {
         <NavBar  isHome={false}/>
         <KidsHero title1="General" title2="English" span="Program" p="Prepare your teen for school success, international exams, and future opportunities with our comprehensive English program designed for pre-teens and teenagers" image="course3.svg" span1="Ages 10-16" span2="📡 Live Zoom Classes" span3="👥 Max 6 Students" />
         <CompleteEnglishJourney />
-        <ProgramDuration students="Max 6 Students Per Group" live="Live Zoom Sessions" recorded="Recorded for 1 Week" date="Flexible Schedule Options" />
+        <ProgramDuration  frhstH3="16 Total Levels" frhstP="A0 to B1" secoundH3="3× Days" secoundP="Per Week" thirdH3="1 Hour" thirdP="Per Session" fourthH3="10 Session" fourthP="Per Level" students="Max 6 Students Per Group" live="Live Zoom Sessions" recorded="Recorded for 1 Week" date="Flexible Schedule Options" />
         <LearningJurny2 />
         <OutMethology />
         <Comments />
