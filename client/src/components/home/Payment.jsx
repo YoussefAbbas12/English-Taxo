@@ -5,7 +5,7 @@ const Payment = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/offers')
+    fetch(`${import.meta.env.VITE_API_URL}/api/api/offers`)
       .then(res => res.json())
       .then(data => setOffers(Array.isArray(data) ? data : []))
       .catch(err => console.error(err))

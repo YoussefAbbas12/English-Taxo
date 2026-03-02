@@ -24,7 +24,7 @@ const Dashboard = () => {
 
   useEffect(() => {
     if (!student) {
-      fetch(`http://localhost:5000/api/students/${id}/public`)
+      fetch(`${import.meta.env.VITE_API_URL}/api/students/${id}/public`)
         .then((r) => r.json())
         .then((data) => setStudent(data))
         .catch(() => navigate("/student"))

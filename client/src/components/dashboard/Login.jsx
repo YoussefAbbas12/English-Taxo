@@ -47,7 +47,7 @@ const Login = () => {
       }
 
       // ── Student Flow ──
-      const res = await fetch(`http://localhost:5000/api/students/${id}/public`);
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/api/students/${id}/public`);
       const data = await res.json();
 
       if (!res.ok) return setError("Student not found");

@@ -10,7 +10,7 @@ const Offers = () => {
 
   const fetchOffers = async () => {
     try {
-      const res = await fetch('http://localhost:5000/api/offers', {
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/api/offers`, {
         headers: { Authorization: `Bearer ${token}` }
       });
       const data = await res.json();
@@ -33,7 +33,7 @@ const Offers = () => {
 
   const saveEdit = async (id) => {
     try {
-      await fetch(`http://localhost:5000/api/offers/${id}`, {
+      await fetch(`${import.meta.env.VITE_API_URL}/api/offers/${id}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` },
         body: JSON.stringify(editForm)

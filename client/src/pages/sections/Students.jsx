@@ -23,7 +23,7 @@ const Students = () => {
 
   const fetchStudents = async () => {
     try {
-      const res = await fetch('http://localhost:5000/api/students', {
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/api/students`, {
         headers: { Authorization: `Bearer ${token}` }
       });
       const data = await res.json();
@@ -47,7 +47,7 @@ const Students = () => {
 
   const saveEdit = async (id) => {
     try {
-      await fetch(`http://localhost:5000/api/students/${id}`, {
+      await fetch(`${import.meta.env.VITE_API_URL}/api/students/${id}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` },
         body: JSON.stringify(editForm)
@@ -60,7 +60,7 @@ const Students = () => {
   // ── Delete ──
   const handleDelete = async (id) => {
     try {
-      await fetch(`http://localhost:5000/api/students/${id}`, {
+      await fetch(`${import.meta.env.VITE_API_URL}/api/students/${id}`, {
         method: 'DELETE',
         headers: { Authorization: `Bearer ${token}` }
       });
@@ -73,7 +73,7 @@ const Students = () => {
   const handleAdd = async (e) => {
     e.preventDefault();
     try {
-      await fetch('http://localhost:5000/api/students', {
+      await fetch(`${import.meta.env.VITE_API_URL}/api/students`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` },
         body: JSON.stringify(addForm)
