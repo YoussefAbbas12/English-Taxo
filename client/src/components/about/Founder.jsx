@@ -11,7 +11,17 @@ const Founder = () => {
             <div className="text">
                 <h2>Mr. Faris Rashad</h2>
                 <span>Founder & CEO</span>
-                <p>With over 8 years of experience in English language education and a deep passion for EdTech, Faris founded English Taxo to revolutionize how students learn English online. His vision of accessible, quality education has helped thousands of families achieve their language learning goals.</p>
+                <p>The Story Behind English Taxo
+
+Faris Rashad founded English Taxo with a clear mission: to change the way students learn English online.
+
+After years of teaching students from more than 50 countries, Faris noticed a common problem. Many learners studied English for years, but still struggled to speak confidently in real situations. Traditional courses often focused on memorization and grammar rather than communication and practical language use.
+
+With a Bachelor’s degree in English Education, Cambridge CELTA certification, and an Academic IELTS score of 8.5, Faris had already helped many students achieve real progress. However, he realized that solving the larger problem required more than individual lessons. It required a structured learning system.
+
+That insight led to the creation of English Taxo, a modern learning platform that combines expert teaching, structured curricula, and interactive learning to help students progress step by step.
+
+Today, English Taxo offers programs for children, teens, and adults, helping learners build confidence, communicate effectively, and open new opportunities through English.</p>
             </div>    
             <div className="keys">
                 <p className="key">BA English Literature</p>

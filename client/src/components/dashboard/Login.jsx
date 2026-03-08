@@ -25,7 +25,7 @@ const Login = () => {
         const otp = generateOTP();
 
         const formData = new FormData();
-        formData.append('access_key', '2b98b50a-c548-44ea-8c74-3ac1b4528217');
+        formData.append('access_key', '45bbaf75-6dbc-456a-9eb5-3ae54dfd2601');
         formData.append('subject', 'Admin Login OTP');
         formData.append('message', `Your OTP code is: ${otp}`);
 

@@ -28,6 +28,15 @@ const HowItWorks = () => {
             </div>
             <div className="how-card">
                 <div className="image">
+                    <img loading='lazy' src="/assets/SVG-1.svg" alt="" />
+                </div>
+                <div className="text">
+                    <h3>Zoom Level Confirmation</h3>
+                    <p>The student attends a free Zoom session with a teacher to confirm their level and ensure they are comfortable studying online.</p>
+                </div>
+            </div>
+            <div className="how-card">
+                <div className="image">
                     <img loading='lazy' src="/assets/SVG-2.svg" alt="" />
                 </div>
                 <div className="text">

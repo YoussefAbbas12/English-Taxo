@@ -363,7 +363,7 @@ html,body{
 
 .how-content {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 24px;
   position: relative;
 }
@@ -374,17 +374,6 @@ html,body{
   align-items: center;
   gap: 28px;
   flex: 1 0 0;
-}
-
-.how-content::after {
-  content: '';
-  position: absolute;
-  bottom: 110px;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 2px;
-  width: 600px;
-  background: linear-gradient(97deg, #0A3D67 0%, #1A68A8 50%, #49BDEE 100%);
 }
 
 .how-content .how-card .image {
@@ -631,8 +620,9 @@ html,body{
   background-color: #EDF0F3;
   display: flex;
   justify-content: center;
-  gap: 26px;
+  gap: 70px;
   padding: 107px 156px;
+  flex-direction: column-reverse;
 }
 
 .questions-section .get-intouch .title h2,
@@ -665,7 +655,7 @@ html,body{
 }
 .get-intouch,
 .questions {
-  width: 50%;
+  width: 100%;
   height: 100%;
   display: flex;
   gap: 10px;
@@ -910,9 +900,6 @@ footer .bottom {
     padding: 80px 25px;
   }
 
-  .how-content::after {
-    bottom: 110px;
-  }
   .payment {
     padding: 74px 50px;
   }
@@ -1018,10 +1005,6 @@ footer .bottom {
   .how-content .how-card {
     width: 70%;
   }
-  .how-content::after {
-    display: none;
-  }
-  
 }
 
 @media(max-width: 380px){
